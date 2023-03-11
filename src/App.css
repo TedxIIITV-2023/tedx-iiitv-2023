@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: black;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("./Fonts/AvenirNextLTPro-Heavy.otf");
+}
+
+@font-face {
+  font-family: "Gill Sans";
+  src: url("./Fonts/gill-sans.otf");
+}
+
+@font-face {
+  font-family: "Gill Sans Light";
+  src: url("./Fonts/gill-sans-light.otf");
+}
+
+@font-face {
+  font-family: "Airstrike";
+  src: url("./Fonts/airstrike.ttf");
+}
+
+@font-face {
+  font-family: "Airstrike Bold";
+  src: url("./Fonts/airstrikebold.ttf");
+}

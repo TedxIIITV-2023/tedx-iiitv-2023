@@ -1,0 +1,138 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.red {
+  color: #e62b1e;
+}
+
+.white {
+  color: #ffffff;
+}
+
+#parent-logo {
+  padding: 7% 0 0 6%;
+}
+
+@media (max-width: 500px) {
+  #parent-logo {
+    padding-left: 10%;
+  }
+}
+
+#parent-logo #child-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#parent-logo #child-flex .ted {
+  font-family: Helvetica Neue, Helvetica;
+  font-weight: 900;
+  font-size: 85px;
+  letter-spacing: -0.4rem;
+}
+
+@media (max-width: 500px) {
+  #parent-logo #child-flex .ted {
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 350px) {
+  #parent-logo #child-flex .ted {
+    font-size: 50px;
+  }
+}
+
+#parent-logo #child-flex .ted-x {
+  font-weight: 700;
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri;
+  position: relative;
+  top: 26px;
+}
+
+@media (max-width: 500px) {
+  #parent-logo #child-flex .ted-x {
+    font-size: 25px;
+    top: 20px;
+    left: 5px;
+  }
+}
+
+@media (max-width: 350px) {
+  #parent-logo #child-flex .ted-x {
+    font-size: 20px;
+    top: 16px;
+  }
+}
+
+#parent-logo .iiitv {
+  font-family: Helvetica Neue, Helvetica;
+  font-weight: 400;
+  font-size: 75px;
+  position: relative;
+  top: -20px;
+}
+
+@media (max-width: 500px) {
+  #parent-logo .iiitv {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 350px) {
+  #parent-logo .iiitv {
+    font-size: 40px;
+    top: -15px;
+  }
+}
+
+#parent-logo .subtitle {
+  font-family: Helvetica Neue, Helvetica;
+  font-weight: 700;
+  font-size: 20px;
+  position: relative;
+  top: -20px;
+}
+
+@media (max-width: 500px) {
+  #parent-logo .subtitle {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 350px) {
+  #parent-logo .subtitle {
+    font-size: 12px;
+  }
+}
+
+.coming-soon {
+  font-family: La Belle Aurore;
+  font-size: 50px;
+  font-weight: 400;
+  padding: 109px 0 130px 6%;
+}
+
+@media (max-width: 500px) {
+  .coming-soon {
+    padding: 10% 0 10% 0;
+    text-align: center;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 350px) {
+  .coming-soon {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=ComingSoon.css.map */
