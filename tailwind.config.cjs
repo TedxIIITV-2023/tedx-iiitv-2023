@@ -22,6 +22,7 @@ module.exports = {
         "hero-pattern": "url('/src/assets/herobg.png')",
         "hero-pattern-1":"url('/src/assets/hue.png')",
         "hero-pattern-2":"url('/src/assets/bulb-bg.png')",
+         "hero-pattern-m": "url('/src/assets/BACKGROUND.png')",
       },
     },
   },
