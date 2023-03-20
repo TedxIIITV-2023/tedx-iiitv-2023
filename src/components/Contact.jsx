@@ -118,8 +118,8 @@ const Contact = () => {
               className='bg-[#181717] py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
-
-          <a href={`mailto:vansh@gmail.com?subject=FeedbackTed&body=${form.message}`}
+          {/* TODO: Put Mail here */}
+          <a href={`mailto:mail?subject=FeedbackTed&body=${form.message}`}
           // {/* <button */}
             // {/* type='submit' */}
             className='bg-[#181717] py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
