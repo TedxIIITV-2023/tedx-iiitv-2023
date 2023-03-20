@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100;0,200;0,400;0,500;0,700;0,800;1,100;1,500;1,800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -211,4 +213,15 @@
 } */
 .inset-0{
   background-color: black;
+}
+
+
+@font-face {
+  font-family: FiverFont;
+  src: url("./assets/fonts/Calvier.ttf") format("truetype");
+}
+
+* {
+  /* font-family: 'MuseoModerno', cursive; */
+font-family: 'PT Sans', sans-serif;
 }

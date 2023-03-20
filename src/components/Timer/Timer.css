@@ -1,0 +1,68 @@
+.timer-container {
+    /* height: 60vh; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: white;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 62px;
+  }
+  
+  @media (max-width: 500px) {
+    .timer-container {
+      height: 20vh;
+      padding-bottom: 0px;
+    }
+  }
+  
+  .timer-container .timer-item {
+    padding: 4%;
+    text-align: center;
+  }
+  
+  @media (max-width: 500px) {
+    .timer-container .timer-item {
+      padding: 3%;
+    }
+  }
+  
+  .timer-container .timer-item .timer-title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: 300;
+    font-size: 24px;
+  }
+  
+  @media (max-width: 740px) {
+    .timer-container .timer-item .timer-title {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .timer-container .timer-item .timer-title {
+      font-size: 15px;
+    }
+  }
+  
+  .timer-container .timer-item .timer-subtitle {
+    padding-top: 20px;
+    font-weight: 800;
+    font-size: 80px;
+  }
+  
+  @media (max-width: 740px) {
+    .timer-container .timer-item .timer-subtitle {
+      font-size: 9vw;
+    }
+  }

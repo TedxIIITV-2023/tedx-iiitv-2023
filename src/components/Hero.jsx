@@ -12,8 +12,8 @@ const Hero = () => {
       >
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-           Unleash Your <span className='text-[#FF0000]'>Passion</span>
+          <h1 className={`${styles.heroHeadText} text-white font-["FiverFont"]`}>
+           Unleash Your <span className='text-[#FF0000] font-["FiverFont"]'>Passion</span>
           </h1>
         </div>
       </div>

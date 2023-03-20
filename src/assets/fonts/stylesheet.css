@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Fiver';
+    src: url('Fiver.eot');
+    src: local('Fiver'),
+        url('Fiver.eot?#iefix') format('embedded-opentype'),
+        url('Fiver.woff2') format('woff2'),
+        url('Fiver.woff') format('woff'),
+        url('Fiver.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fiver Alt';
+    src: url('FiverAlt.eot');
+    src: local('Fiver Alt'), local('FiverAlt'),
+        url('FiverAlt.eot?#iefix') format('embedded-opentype'),
+        url('FiverAlt.woff2') format('woff2'),
+        url('FiverAlt.woff') format('woff'),
+        url('FiverAlt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fiver Solid';
+    src: url('FiverSolid.eot');
+    src: local('Fiver Solid'), local('FiverSolid'),
+        url('FiverSolid.eot?#iefix') format('embedded-opentype'),
+        url('FiverSolid.woff2') format('woff2'),
+        url('FiverSolid.woff') format('woff'),
+        url('FiverSolid.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fiver Inline';
+    src: url('FiverInline.eot');
+    src: local('Fiver Inline'), local('FiverInline'),
+        url('FiverInline.eot?#iefix') format('embedded-opentype'),
+        url('FiverInline.woff2') format('woff2'),
+        url('FiverInline.woff') format('woff'),
+        url('FiverInline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fiver Outline';
+    src: url('FiverOutline.eot');
+    src: local('Fiver Outline'), local('FiverOutline'),
+        url('FiverOutline.eot?#iefix') format('embedded-opentype'),
+        url('FiverOutline.woff2') format('woff2'),
+        url('FiverOutline.woff') format('woff'),
+        url('FiverOutline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

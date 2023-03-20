@@ -5,19 +5,24 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
+import {tedposter} from "../assets";
 
 const FeedbackCard = ({
   index,
   testimonial,
+  p1,
+  p2
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full'
+    className='bg-[#181717] p-10 rounded-3xl  w-full'
   >
-    <p className='text-white font-black text-[28px]'>Events</p>
+    <p className='text-white font-black text-[28px]'>Unleash Your Passion</p>
 
     <div className='mt-1'>
-      <p className='text-white tracking-wider text-[18px]'>{testimonial}</p>
+      <p className='text-white mb-4 tracking-wider text-[18px]'>{testimonial}</p>
+      <p className='text-white mb-4 tracking-wider text-[18px]'>{p1}</p>
+      <p className='text-white tracking-wider text-[18px]'>{p2}</p>
 
       <div className='mt-7 flex justify-between items-center gap-1'>
         <div className='flex-1 flex flex-col'>
@@ -30,20 +35,24 @@ const FeedbackCard = ({
 
 const Feedbacks = () => {
   return (
-    <div className={`mt-12 bg-black-100 rounded-[20px]`}>
-      <div
-        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
-      >
-        <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>What others say</p>
-          <h2 className={styles.sectionHeadText}>This is <span className='text-[#FF0000]'>How We do It</span></h2>
-        </motion.div>
+    <div className="flex flex-row justify-between w-full">
+      <div className={`mt-8 bg-[#0e0e0e] rounded-[20px] w-2/3`}>
+        <div
+          className={`bg-[#0e0e0e] rounded-2xl ${styles.padding} `}
+        >
+          <motion.div variants={textVariant()}>
+            <h2 className={styles.sectionHeadText}>Our <span className='text-[#FF0000]'>Theme</span></h2>
+          </motion.div>
+        </div>
+        <div className={`pb-14 ${styles.paddingX} bg-[#0e0e0e] flex flex-col gap-7 w-full`}>
+          {testimonials.map((testimonial, index) => (
+            <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
+          ))}
+        </div>
       </div>
-      <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
-        {testimonials.map((testimonial, index) => (
-          <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
-        ))}
-      </div>
+      {/* <div className="w-1/3 h-full m-28">
+        <img src={tedposter} alt="Mic"/>
+        </div> */}
     </div>
   );
 };

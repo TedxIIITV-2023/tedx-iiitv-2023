@@ -1,4 +1,5 @@
 import React from "react";
+import Timer from "./Timer/Timer";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -19,7 +20,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-white text-[20px] max-w-3xl leading-[30px]'
       >
         The theme "Unleash Your Passion" inspires people to explore their passions, hobbies, and aspirations and to start working towards their goals. Passion is a powerful motivator that drives individuals toward achieving their objectives with commitment and dedication. It serves as the incentive for individuals to overcome challenges and succeed in their chosen professions.
 
@@ -27,7 +28,7 @@ The subject emphasizes the important role of discovering one's true calling and 
 
       </motion.p>
       <h2 className={styles.sectionHeadText}>Are You Ready?</h2>
-
+      <Timer />
      
     </>
   );
