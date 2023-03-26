@@ -18,14 +18,17 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
+ 
 }
 .project .cont
 {
   margin-top: 5%;
-  background-color: #000000;
-  
+  background-color: #0000002d;
+    
 }
 .container {
+ 
+
   font-weight: 400;
   position: relative;
   background-repeat: no-repeat;
@@ -33,6 +36,7 @@ html {
   background-position: center center;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
+  margin: 0%;
 }
 
 
@@ -50,9 +54,20 @@ p, a, li, button, ul {
   margin-bottom: 5%;
 	font-weight: 700;
      text-align: center;
-     padding: 10px;
-     color: 	#DC1C13;
-     
+     padding: 2px;
+     color: 	#ffffff;     
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 .proj-imgbx {
   position: relative;
@@ -268,4 +283,9 @@ a[href*="linkedin.com"] svg {
 .mot{
   margin: 0%;
   padding: 0%;
+}
+.project{
+  background-color: #c10f0f00;
+  margin: 0;
+  background-image: url("../../assets/BACKGROUND.png");
 }

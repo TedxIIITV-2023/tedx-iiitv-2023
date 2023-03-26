@@ -186,7 +186,7 @@ export const Teams = () => {
 
 
   ];
-const headings = ['Core Team', 'Core Support', 'Web Team', 'Design Team', 'PR Team', 'Editorial Team'];
+const headings = ['Core Team ', 'Core Support', 'Web Team', 'Design Team', 'PR Team', 'Editorial Team'];
 const count = [2, 4, 4, 5, 5, 3];
 
 

@@ -20,18 +20,25 @@ const App = () => {
   }
 
   return (
-    !loading && (
-      <div>
-      <Navbar />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/aboutUs" element={<AboutUs />} />
-          <Route path="/teams" element={<Teams />}/>
-        </Routes>
-      </BrowserRouter>
-      </div>
-    )
+    <>
+      {loading && (
+        <div className="loader-container">
+          <div className="loader" />
+        </div>
+      )}
+      {!loading && (
+        <div>
+          <Navbar />
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/aboutUs" element={<AboutUs />} />
+              <Route path="/teams" element={<Teams />} />
+            </Routes>
+          </BrowserRouter>
+        </div>
+      )}
+    </>
   );
 };
 
