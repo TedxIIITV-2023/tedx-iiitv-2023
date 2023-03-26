@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./Footer/Footer";
 import Navbar from "./Navbar";
 import Speaker from "./Speaker/Speaker";
 const Speakers = () => {
@@ -6,7 +7,6 @@ const Speakers = () => {
         <div className="block">
             <div>
                 <Navbar />
-
             </div>
             <div className="h-auto">
                 <Speaker />

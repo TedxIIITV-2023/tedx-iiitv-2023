@@ -10,11 +10,32 @@
     gap: 8px;
     padding: 2rem;
     filter: drop-shadow(4px 10px 20px #920000);
+    perspective: 1000px;
 }
 
-.Card div {
+.Card-inner {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.Card:hover .Card-inner {
+    transform: rotateY(180deg);
+}
+
+.Card-front,
+.Card-back {
+    backface-visibility: hidden;
+}
+
+
+.Card-front div {
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
+}
+
+.Card-back {
+    transform: rotateY(180deg);
+    /* Rotate the back of the card to the other side */
 }

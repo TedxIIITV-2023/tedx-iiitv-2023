@@ -27,7 +27,7 @@ import p22 from "../assets/img/a22.jpg";
 import p23 from "../assets/img/a23.jpg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-const headings = ['Core Team ', 'Core Support', 'Web Team', 'Design Team', 'PR Team', 'Writing Team'];
+const headings = ['Core Team ', 'Core Support', 'Web Team', 'Design Team', 'Management Team', 'Writing Team'];
 export const Teams = () => {
 
   const projects = [
@@ -129,14 +129,14 @@ export const Teams = () => {
     },
  {
       title: "Khushi Saxena",
-      description: "PR Team",
+      description: "Management Team",
       imgUrl: p8,
       linkedIn: "https://www.linkedin.com/in/khushi-saxena-a965ba22a/",
     },
 
  {
       title: "Jagruti Piprade",
-      description: "PR Team",
+      description: "Management Team",
       imgUrl: p15,
       linkedIn: "https://www.linkedin.com/in/jagruti-piprade-61bb98224/",
     },
@@ -145,20 +145,20 @@ export const Teams = () => {
    
      {
       title: "Gargee Meshram ",
-      description: "PR Team",
+      description: "Management Team",
       imgUrl: p9,
       linkedIn: "https://www.linkedin.com/in/gargee-meshram-b2a54a245/",
     },
  {
       title: "Shravani Waghmare ",
-      description: "PR Team",
+      description: "Management Team",
       imgUrl: p22,
       linkedIn: "https://www.linkedin.com/in/shravani-waghmare-223942227/",
     },
 
  {
       title: " Ved Vaghela",
-      description: "PR Team",
+      description: "Management Team",
       imgUrl: p23,
       linkedIn: "https://www.linkedin.com/in/ved-vaghela-9215b5225/",
     },
@@ -185,7 +185,7 @@ export const Teams = () => {
 
 
   ];
-const headings = ['Core Team', 'Core Support', 'Web Team', 'Design Team', 'PR Team', 'Editorial Team'];
+const headings = ['Core Team', 'Core Support', 'Web Team', 'Design Team', 'Management Team', 'Editorial Team'];
 const count = [2, 4, 4, 5, 5, 3];
 
 

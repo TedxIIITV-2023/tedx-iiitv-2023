@@ -23,10 +23,10 @@ function Home() {
         <section className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
           <Feedbacks />
         </section>
-        <section className='relative z-0'>
+        {/* <section className='relative z-0'>
           <Contact />
           <StarsCanvas />
-        </section>
+        </section> */}
       </div>
   );
 }

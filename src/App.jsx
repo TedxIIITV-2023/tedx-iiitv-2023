@@ -30,7 +30,7 @@ const App = () => {
           <Route path="/teams" element={<Teams />}/>
           <Route path="/speakers" element={<Speakers />} />
         </Routes>
-      {/* <Footer /> */}
+      <Footer />
       </BrowserRouter>
       </div>
     )
