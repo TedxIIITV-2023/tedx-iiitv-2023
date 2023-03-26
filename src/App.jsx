@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Works, StarsCanvas, AboutUs } from "./components";
 import { useRef } from "react";
+import MeetOurTeam from "./components/MeetOurTeam";
 import Home from "./components/Home";
 import { Teams } from "./components/Teams";
 import "../styles.css"

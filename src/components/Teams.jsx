@@ -27,6 +27,7 @@ import p22 from "../assets/img/a22.jpg";
 import p23 from "../assets/img/a23.jpg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import MeetOurTeam from "./MeetOurTeam";
 const headings = ['Core Team ', 'Core Support', 'Web Team', 'Design Team', 'PR Team', 'Writing Team'];
 export const Teams = () => {
 
@@ -192,7 +193,11 @@ const count = [2, 4, 4, 5, 5, 3];
 const [loading, setLoading] = useState(true);
 
 return (
-  <section className="project" id="project">
+ 
+ <div className="mot"> 
+  <MeetOurTeam/>  
+
+  <section className="project" id="project">    
     <Container>
       <Row className="cont">
         <Col size={12}>
@@ -269,5 +274,6 @@ return (
       </Row>
     </Container>
   </section>
+  </div>
 );
 }
