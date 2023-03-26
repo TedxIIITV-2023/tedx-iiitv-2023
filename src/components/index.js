@@ -8,6 +8,7 @@ import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import AboutUs from "./AboutUs"
+import Speakers from './Speakers';
 
 
 
@@ -24,4 +25,6 @@ export {
   BallCanvas, 
   ComputersCanvas, 
   StarsCanvas,
-  AboutUs};
+  AboutUs,
+  Speakers
+};

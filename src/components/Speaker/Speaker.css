@@ -1,0 +1,6 @@
+.bgimage_speaker {
+    background: url(../../assets/speakers_bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateY(-1%);
+}
