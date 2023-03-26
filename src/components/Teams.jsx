@@ -185,14 +185,18 @@ export const Teams = () => {
 
 
   ];
-const headings = ['Core Team', 'Core Support', 'Web Team', 'Design Team', 'Management Team', 'Editorial Team'];
+const headings = ['Core Team ', 'Core Support', 'Web Team', 'Design Team', 'Management Team', 'Editorial Team'];
 const count = [2, 4, 4, 5, 5, 3];
 
 
 const [loading, setLoading] = useState(true);
 
 return (
-  <section className="project" id="project">
+ 
+ <div className="mot"> 
+  <MeetOurTeam/>  
+
+  <section className="project" id="project">    
     <Container>
       <Row className="cont">
         <Col size={12}>
@@ -269,5 +273,6 @@ return (
       </Row>
     </Container>
   </section>
+  </div>
 );
 }

@@ -57,8 +57,8 @@ const Navbar = () => {
                 } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`/${nav.id}`} onClick={() => {
-                setToggle(!toggle);
+              <a href={`${nav.id}`} onClick={() => {
+               setToggle(!toggle);
                 setActive(nav.title);
               }}>
                 {nav.title}

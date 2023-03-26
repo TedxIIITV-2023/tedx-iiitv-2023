@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Works, StarsCanvas, AboutUs, Speakers } from "./components";
 import { useRef } from "react";
+import MeetOurTeam from "./components/MeetOurTeam";
 import Home from "./components/Home";
 import { Teams } from "./components/Teams";
 import "../styles.css"
@@ -20,20 +21,27 @@ const App = () => {
   }
 
   return (
-    !loading && (
-      <div>
-      <Navbar />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/aboutUs" element={<AboutUs />} />
-          <Route path="/teams" element={<Teams />}/>
-          <Route path="/speakers" element={<Speakers />} />
-        </Routes>
-      <Footer />
-      </BrowserRouter>
-      </div>
-    )
+    <>
+      {loading && (
+        <div className="loader-container">
+          <div className="loader" />
+        </div>
+      )}
+      {!loading && (
+        <div>
+          <Navbar />
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/aboutUs" element={<AboutUs />} />
+              <Route path="/teams" element={<Teams />} />
+              <Route path="/speakers" element={<Speakers />} />
+            </Routes>
+            <Footer />
+          </BrowserRouter>
+        </div>
+      )}
+    </>
   );
 };
 
