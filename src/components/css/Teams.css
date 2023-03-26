@@ -1,0 +1,266 @@
+/************ Custom Font ************/
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Bold.ttf');
+	font-weight: 700;
+}
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Medium.ttf');
+	font-weight: 500;
+}
+@font-face {
+	font-family: Centra;
+	src: url('./assets/font/CentraNo2-Book.ttf');
+	font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+.project .cont
+{
+  margin-top: 5%;
+  background-color: #000000;
+  
+}
+.container {
+  font-weight: 400;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff !important;
+  font-family: 'Centra', sans-serif !important;
+}
+
+
+p, a, li, button, ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+}
+
+
+.project h2 {
+	font-size: 45px;
+  margin-top: 1%;
+  margin-bottom: 5%;
+	font-weight: 700;
+     text-align: center;
+     padding: 10px;
+     color: 	#DC1C13;
+     
+}
+.proj-imgbx {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  width: 100%; 
+  height: 100%; 
+}
+/* Default styles */
+.proj-imgbx::before {
+  content: "";
+  background: linear-gradient(45.21deg, #c10f0f -5.91%, #ff4747 111.58%);
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.proj-txtx {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+  .proj-imgbx:hover::before {
+    height: 100%;
+  }
+
+  .proj-txtx {
+    top: 50%;
+  }
+
+  .proj-imgbx:hover .proj-txtx {
+    opacity: 1;
+  }
+
+
+.proj-txtx h4 {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+}
+.proj-txtx span {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+}
+
+.project-card {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.proj-img {
+  border: 1px solid #ddd;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.proj-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.proj-desc span {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  margin-right: 10px;
+}
+
+.proj-desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 30%;
+
+}
+.project.fade-in {
+  animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 0rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.proj-txtx a {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  margin-right: 70px;
+}
+@media (min-width:1700px) {
+	main .container {
+		max-width: 100%;
+		padding: 0 15rem;
+	}
+}
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
+}
+.project {
+  padding: 20px;
+  margin: 5%;
+  margin-top: 0%;
+  position: relative;
+  background-color: black;
+}
+.project .cs {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: justify;
+  text-justify: inter-word;
+  width: 90%;
+  padding: 0px;
+}
+.proj-desc
+{
+  margin-right: 5%;
+}
+.project p {
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 70%;
+}
+.proj-linkedin:hover {
+  transform: scale(1.1);
+}
+a[href*="linkedin.com"] svg {
+  color: blue;
+}
+.project-card-container {
+  width: calc((100% / 6) - 20px); /* Set width to 16.66666667% minus margin */
+}
+
+@media (max-width: 1199.98px) {
+  .project-card-container {
+    width: calc((100% / 5) - 20px); /* Set width to 20% minus margin */
+  }
+}
+
+@media (max-width: 991.98px) {
+  .project-card-container {
+    width: calc((100% / 4) - 20px); /* Set width to 25% minus margin */
+  }
+}
+
+@media (max-width: 767.98px) {
+  .project-card-container {
+    width: calc((100% / 3) - 20px); /* Set width to 33.33333333% minus margin */
+  }
+}
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card-wrapper {
+  width: 25%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}

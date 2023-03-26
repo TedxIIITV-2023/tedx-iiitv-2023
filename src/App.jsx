@@ -1,50 +1,37 @@
-import { BrowserRouter } from "react-router-dom";
-
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Works, StarsCanvas } from "./components";
-
-// import { LocomotiveScrollProvider } from "react-locomotive-scroll";
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, Works, StarsCanvas, AboutUs } from "./components";
 import { useRef } from "react";
-import "./App.css";
+import Home from "./components/Home";
+import { Teams } from "./components/Teams";
+import "../styles.css"
 
 const App = () => {
-  const ref = useRef(null);
+  console.log("rendering app js");
+  const spinner = document.getElementsByClassName("loader")[0];
+  const [loading, setLoading] = React.useState(true);
 
-  const options = {
-    smooth: true,
-  } 
+  if (spinner) {
+    setTimeout(() => {
+      spinner.style.display = "none";
+      setLoading(false);
+    }, 4590);
+  }
+
   return (
-    <BrowserRouter>
-      <div className='relative z-0 bg-primary'>
-      {/* <LocomotiveScrollProvider options={options} containerRef={ref}> */}
-        <section className='bg-hero-pattern-m bg-cover bg-no-repeat bg-center'>
-          <Navbar />
-          <Hero />
-          </section>
-          <section className='bg-hero-pattern-2 bg-cover bg-no-repeat bg-center'>
-          <About />
-        </section>
-        
-        
-        <section className='relative z-0'>
-        <Experience />
-        <StarsCanvas />
-        </section>
-        <section className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-        <Works />
-        </section>
-        <section className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-        <Feedbacks />
-        </section>
-       
-        <section className='relative z-0'>
-          <Contact />
-          <StarsCanvas />
-        </section>
-        {/* </LocomotiveScrollProvider> */}
+    !loading && (
+      <div>
+      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/aboutUs" element={<AboutUs />} />
+          <Route path="/teams" element={<Teams />}/>
+        </Routes>
+      </BrowserRouter>
       </div>
-
-    </BrowserRouter>
+    )
   );
-}
+};
 
 export default App;
