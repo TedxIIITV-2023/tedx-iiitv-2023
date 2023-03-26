@@ -1,3 +1,7 @@
+.footer {
+  position: relative;
+  bottom: 0;
+}
 .footer-wrapper {
     border-top: 1px ridge #646464;
     padding: 4em;

@@ -5,6 +5,7 @@ import { useRef } from "react";
 import Home from "./components/Home";
 import { Teams } from "./components/Teams";
 import "../styles.css"
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   console.log("rendering app js");
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/teams" element={<Teams />}/>
           <Route path="/speakers" element={<Speakers />} />
         </Routes>
+      {/* <Footer /> */}
       </BrowserRouter>
       </div>
     )

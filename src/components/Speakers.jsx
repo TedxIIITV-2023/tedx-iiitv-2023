@@ -1,15 +1,16 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Speaker from "./Speaker/Speaker";
-import Footer from "./Footer/Footer";
 const Speakers = () => {
     return (
-        <div>
-            <Navbar />
+        <div className="block">
             <div>
+                <Navbar />
+
+            </div>
+            <div className="h-auto">
                 <Speaker />
             </div>
-            <Footer /> 
         </div>
     );
 }
