@@ -194,7 +194,7 @@ const [loading, setLoading] = useState(true);
 return (
  
  <div className="mot"> 
-  <MeetOurTeam/>  
+
 
   <section className="project" id="project">    
     <Container>

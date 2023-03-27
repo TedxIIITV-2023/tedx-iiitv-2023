@@ -14,16 +14,13 @@ const Footer = () => {
             <Link className="link" to="/">
               Home
             </Link>
-            <Link className="link" to="/about">
+            <Link className="link" to="/AboutUs">
               About
             </Link>
             <Link className="link" to="/speakers">
               Speakers
             </Link>
-            <Link className="link" to="/talks">
-              Talks
-            </Link>
-            <Link className="link" to="/team">
+            <Link className="link" to="/teams">
               Team
             </Link>
           </div>

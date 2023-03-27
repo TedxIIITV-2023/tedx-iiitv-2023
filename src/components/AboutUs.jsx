@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import 'animate.css';
-import bg from "../assets/herobg.png"
+import bg from "../assets/bg5.png"
 import TrackVisibility from 'react-on-screen';
 import "./css/AboutUs.css"
 import { SectionWrapper } from "../hoc";
@@ -68,7 +68,7 @@ IIIT Vadodara is committed to providing its students with a well-rounded educati
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "TED :", "TEDX :", "IIITV :" ];
+  const toRotate = [ "TED ", "TEDX ", "IIITV " ];
   const period = 1000;
 
   useEffect(() => {
@@ -106,7 +106,7 @@ IIIT Vadodara is committed to providing its students with a well-rounded educati
 
   return (
    
-    <section className="project" id="project" style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <section className="project" id="project" style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center' ,backgroundRepeat:'no-repeat',backgroundAttachment:'fixed',height:'100vh',width:'auto' }}>
       <center>
       <Container>
         <Row>
@@ -114,7 +114,7 @@ IIIT Vadodara is committed to providing its students with a well-rounded educati
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-               <h2 style={{ marginBottom: '50px', marginTop: '0px', color: "red"}}>{`About`} <span className="txt-rotate" style={{color: "white"} } dataPeriod="1000" data-rotate='[ "Ted :", "TedX :", "IIITV :" ]'><span className="wrap">{text}</span></span></h2>
+               <h2 style={{ marginBottom: '50px', marginTop: '0px', color: "red"}}>{`About`} <span className="txt-rotate" style={{color: "white"} } dataPeriod="1000" data-rotate='[ "Ted ", "TedX ", "IIITV " ]'><span className="wrap">{text}</span></span></h2>
                <div className='tabs'>
                 {tabs.map((tab, i) =>
                     <button key={i} id={tab.id} disabled={currentTab === `${tab.id}`} onClick={(handleTabClick)}>{tab.tabTitle}</button>

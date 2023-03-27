@@ -17,7 +17,7 @@ function Home() {
           <Experience />
           <StarsCanvas />
         </section>
-        <section className='bg-hero-pattern bg-cover bg-no-repeat bg-center bg-fixed'>
+        <section className='bg-hero-pattern bg-cover bg-no-repeat bg-center '>
           <Works />
         </section>
         {/* <section className='bg-hero-pattern bg-cover bg-no-repeat bg-center bg-fixed'>
