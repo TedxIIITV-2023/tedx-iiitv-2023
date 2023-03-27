@@ -10,18 +10,22 @@ function Home() {
         <section className='bg-hero-pattern-m bg-cover bg-no-repeat bg-center'>
           <Hero />
         </section>
-        <section className='bg-hero-pattern-2 bg-cover bg-no-repeat bg-center'>
+        <section className='bg-hero-pattern-2 bg-cover bg-no-repeat bg-center bg-fixed'>
           <About />
         </section>
         <section className='relative z-0'>
           <Experience />
           <StarsCanvas />
         </section>
-        <section className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+        <section className='bg-hero-pattern bg-cover bg-no-repeat bg-center bg-fixed'>
           <Works />
         </section>
-        <section className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+        {/* <section className='bg-hero-pattern bg-cover bg-no-repeat bg-center bg-fixed'>
           <Feedbacks />
+        </section> */}
+        <section className='relative z-0 '>
+        <Feedbacks />
+          <StarsCanvas />
         </section>
         {/* <section className='relative z-0'>
           <Contact />

@@ -90,17 +90,12 @@ const Footer = () => {
           <hr className="line" />
           <div className="link-container">
             <Link className="link" to="/speakers">
-              Gauri Bakshi
+               Anuj Kumar Sharma
             </Link>
             <Link className="link" to="/speakers">
-              Pratik Thakker
+              Nandini Agrawal
             </Link>
-            <Link className="link" to="/speakers">
-              Barat Ali Batoor
-            </Link>
-            <Link className="link red" to="/speakers">
-              ...More
-            </Link>
+           
           </div>
         </div>
         <div className="footer-container">
@@ -109,12 +104,8 @@ const Footer = () => {
           <p className="text white">Find us at tedxiiitv@gmail.com</p>
           <div className="flex-container">
             <div>
-              <p>Anavya Upadhyay</p>
-              <p>+91 90091 11901</p>
-            </div>
-            <div>
-              <p>Raghvi Saxena</p>
-              <p>+91 77489 58943</p>
+              <p>Tejas Joshi</p>
+              <p>+91 87886 28759</p>
             </div>
           </div>
         </div>

@@ -2,10 +2,10 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Works, StarsCanvas, AboutUs, Speakers } from "./components";
 import { useRef } from "react";
-import MeetOurTeam from "./components/MeetOurTeam";
+// import MeetOurTeam from "./components/MeetOurTeam";
 import Home from "./components/Home";
 import { Teams } from "./components/Teams";
-import "../styles.css"
+import "../styles.css";
 import Footer from "./components/Footer/Footer";
 
 const App = () => {
@@ -25,7 +25,8 @@ const App = () => {
       {loading && (
         <div className="loader-container">
           <div className="loader" />
-        </div>
+          
+    </div>
       )}
       {!loading && (
         <div>

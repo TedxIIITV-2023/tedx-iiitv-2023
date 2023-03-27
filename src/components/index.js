@@ -26,5 +26,6 @@ export {
   ComputersCanvas, 
   StarsCanvas,
   AboutUs,
-  Speakers
+  Speakers,
+  
 };

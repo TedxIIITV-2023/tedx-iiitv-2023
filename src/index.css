@@ -204,7 +204,7 @@
 
 
 .bg-hero-pattern {
-    background-image: url(/src/assets/herobg.png);
+    background-image: url(/src/assets/again.jpg);
     background-color: black;
 }
 /* .inset-0 {
@@ -227,4 +227,8 @@
 * {
   /* font-family: 'MuseoModerno', cursive; */
 font-family: 'PT Sans', sans-serif;
+}
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: black;
 }
