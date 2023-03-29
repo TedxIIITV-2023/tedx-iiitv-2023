@@ -114,7 +114,14 @@ IIIT Vadodara is committed to providing its students with a well-rounded educati
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-               <h2 className="headingAU" style={{ marginBottom: '50px',  marginTop: '0px', color: "red"}}>{`About`} <span className="txt-rotate" style={{color: "white"} } dataPeriod="1000" data-rotate='[ "Ted ", "TedX ", "IIITV " ]'><span className="wrap">{text}</span></span></h2>
+        <h2 className='font-["FiverFont"]' style={{ marginBottom: '50px', marginTop: '0px', color: "red" }}>
+  {`About `}
+  <span  className="txt-rotate font-['FiverFont']" style={{ color: "white" }} dataPeriod="1000" data-rotate='[ "Ted ", "TedX ", "IIITV " ]'>
+    <span className="wrap">{text}</span>
+  </span>
+</h2>
+
+
                <div className='tabs'>
                 {tabs.map((tab, i) =>
                     <button key={i} id={tab.id} disabled={currentTab === `${tab.id}`} onClick={(handleTabClick)}>{tab.tabTitle}</button>
