@@ -27,6 +27,7 @@ import p22 from "../assets/img/a22.jpg";
 import p23 from "../assets/img/a23.jpg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import MeetOurTeam from "./MeetOurTeam";
 const headings = ['Core Team ', 'Core Support', 'Web Team', 'Design Team', 'Management Team', 'Writing Team'];
 export const Teams = () => {
 
@@ -190,89 +191,83 @@ const count = [2, 4, 4, 5, 5, 3];
 
 
 const [loading, setLoading] = useState(true);
-
 return (
- 
- <div className="mot"> 
-
-
-  <section className="project" id="project">    
-    <Container>
-      <Row className="cont">
-        <Col size={12}>
-          <TrackVisibility
-            offset={200}
-            partialVisibility={true}
-            onChange={(isVisible) => setLoading(!isVisible)}
-          >
-            {({ isVisible }) => (
-              <div
-                className={
-                  loading
-                    ? ""
-                    : isVisible
-                    ? "animate__animated animate__fadeIn"
-                    : ""
-                }
-              >
-                {headings.map((heading, headingIndex) => (
-                  <React.Fragment key={headingIndex}>
-                    <h2>{heading}</h2>
-                    <Tab.Container
-                      id={`${headingIndex}-tabs`}
-                      defaultActiveKey="first"
-                    >
-                      <Nav
-                        variant="pills"
-                        className="nav-pills mb-5 justify-content-center align-items-center"
-                        id={`${headingIndex}-pills-tab`}
+  <div className="mot"> 
+    <MeetOurTeam />
+    <section className="project" id="project">    
+      <Container>
+        <Row className="cont">
+          <Col size={12}>
+            <TrackVisibility
+              offset={200}
+              partialVisibility={true}
+              onChange={(isVisible) => setLoading(!isVisible)}
+            >
+              {({ isVisible }) => (
+                <div
+                  className={
+                    loading
+                      ? ""
+                      : isVisible
+                      ? "animate__animated animate__fadeIn"
+                      : ""
+                  }
+                >
+                  {headings.map((heading, headingIndex) => (
+                    <React.Fragment key={headingIndex}>
+                      <h2 className="headingT">{heading}</h2>
+                      <Tab.Container
+                        id={`${headingIndex}-tabs`}
                       >
-                      </Nav>
-                      <Tab.Content
-                        id="slideInUp"
-                        className={
-                          loading
-                            ? ""
-                            : isVisible
-                            ? "animate__animated animate__slideInUp"
-                            : ""
-                        }
-                      >
-                        <Tab.Pane eventKey="first">
-                          <div className="row project-cards">
-                            {projects
-                              .slice(
-                                count
-                                  .slice(0, headingIndex)
-                                  .reduce((a, b) => a + b, 0),
-                                count
-                                  .slice(0, headingIndex + 1)
-                                  .reduce((a, b) => a + b, 0)
-                              )
-                              .map((project, index) => (
-                                <div
+                        <Nav
+                          variant="pills"
+                          className="nav-pills mb-5 justify-content-center align-items-center"
+                          id={`${headingIndex}-pills-tab`}
+                        >
+                        </Nav>
+                        <Tab.Content
+                          id="slideInUp"
+                          className={
+                            loading
+                              ? ""
+                              : isVisible
+                              ? "animate__animated animate__slideInUp"
+                              : ""
+                          }
+                        >
+                          <Tab.Pane eventKey="first">
+                            <div className="row project-cards">
+                              {projects
+                                .slice(
+                                  count
+                                    .slice(0, headingIndex)
+                                    .reduce((a, b) => a + b, 0),
+                                  count
+                                    .slice(0, headingIndex + 1)
+                                    .reduce((a, b) => a + b, 0)
+                                )
+                                .map((project, index) => (
+                                  <div
                                   key={index}
-                                  className="col-sm-12 col-md-6 col-lg-3 mb-4 project-card-wrapper"
+                                  className="col-6 col-sm-6 col-md-4 col-lg-3 mb-4 project-card-wrapper"
                                 >
-                                  <ProjectCard
-                                    {...project}
-                                    className="project-card"
-                                  />
+                                  <ProjectCard {...project} className="project-card" />
                                 </div>
-                              ))}
-                          </div>
-                        </Tab.Pane>
-                      </Tab.Content>
-                    </Tab.Container>
-                  </React.Fragment>
-                ))}
-              </div>
-            )}
-          </TrackVisibility>
-        </Col>
-      </Row>
-    </Container>
-  </section>
+                                
+                                ))}
+                            </div>
+                          </Tab.Pane>
+                        </Tab.Content>
+                      </Tab.Container>
+                    </React.Fragment>
+                  ))}
+                </div>
+              )}
+            </TrackVisibility>
+          </Col>
+        </Row>
+      </Container>
+    </section>
   </div>
 );
-}
+                                }
