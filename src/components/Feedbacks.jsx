@@ -21,9 +21,7 @@ const FeedbackCard = ({
 
     <div className='mt-1'>
       <p className='text-white mb-4 tracking-wider text-[18px]'>{testimonial}</p>
-      <p className='text-white mb-4 tracking-wider text-[18px]'>{p1}</p>
-      <p className='text-white tracking-wider text-[18px]'>{p2}</p>
-
+      
       <div className='mt-7 flex justify-between items-center gap-1'>
         <div className='flex-1 flex flex-col'>
         </div>

@@ -26,6 +26,8 @@ import p21 from "../assets/img/a21.jpg";
 import p22 from "../assets/img/a22.jpg";
 import p23 from "../assets/img/a23.jpg";
 import 'animate.css';
+import { Stars } from "@react-three/drei";
+import { BallCanvas } from "./canvas";
 import TrackVisibility from 'react-on-screen';
 import MeetOurTeam from "./MeetOurTeam";
 const headings = ['Core Team ', 'Core Support', 'Web Team', 'Design Team', 'Management Team', 'Writing Team'];
@@ -267,7 +269,10 @@ return (
           </Col>
         </Row>
       </Container>
+   
     </section>
+   
   </div>
+  
 );
                                 }
