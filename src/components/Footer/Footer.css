@@ -4,8 +4,8 @@
 }
 .footer-wrapper {
     border-top: 1px ridge #646464;
-    padding: 4em;
-    padding-top: 95px;
+    padding: 2em;
+    padding-top: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -24,7 +24,7 @@
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    font-size: 1.875rem;
+    font-size: 1.75rem;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   }
   
