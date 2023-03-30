@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import { Teams } from "./components/Teams";
 import "../styles.css";
 import Footer from "./components/Footer/Footer";
+import YtFrame from "./components/YtFrame";
 
 const App = () => {
   console.log("rendering app js");
