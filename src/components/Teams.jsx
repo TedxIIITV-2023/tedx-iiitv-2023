@@ -25,7 +25,11 @@ import p20 from "../assets/img/a20.jpg";
 import p21 from "../assets/img/a21.jpg";
 import p22 from "../assets/img/a22.jpg";
 import p23 from "../assets/img/a23.jpg";
+import p24 from "../assets/img/new1.jpg";
+import p25 from "../assets/img/new2.jpg";
 import 'animate.css';
+import { Stars } from "@react-three/drei";
+import { BallCanvas } from "./canvas";
 import TrackVisibility from 'react-on-screen';
 import MeetOurTeam from "./MeetOurTeam";
 const headings = ['Core Team ', 'Core Support', 'Web Team', 'Design Team', 'Management Team', 'Writing Team'];
@@ -181,13 +185,25 @@ export const Teams = () => {
       imgUrl: p10,
       linkedIn: "https://www.linkedin.com/in/manas-ingle-68813b245/",
     },
+    {
+      title: "Dev Agarwal ",
+      description: "Video Team",
+      imgUrl: p25,
+      linkedIn: "https://www.linkedin.com/in/dev-shrinivas-agrawal-949518232",
+    },
+    {
+      title: "Harsh Sharma",
+      description: "Video Team",
+      imgUrl: p24,
+      linkedIn: "https://www.linkedin.com/in/harsh-sharma-9aa2b8245",
+    },
 
 
 
 
   ];
-const headings = ['Core Team ', 'Core Support', 'Web Team', 'Design Team', 'Management Team', 'Editorial Team'];
-const count = [2, 4, 4, 5, 5, 3];
+const headings = ['Core Team ', 'Core Support', 'Web Team', 'Design Team', 'Management Team', 'Editorial Team', 'Video Team'];
+const count = [2, 4, 4, 5, 5, 3, 2];
 
 
 const [loading, setLoading] = useState(true);
@@ -267,7 +283,10 @@ return (
           </Col>
         </Row>
       </Container>
+   
     </section>
+   
   </div>
+  
 );
                                 }

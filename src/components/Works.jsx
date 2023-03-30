@@ -74,7 +74,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          TEDx speakers are individuals who are invited to speak at a TEDx event, which is a local, independently organized version of the global TED conference. These speakers are often experts in their fields or have unique life experiences that they share in a compelling way. TEDx talks cover a wide range of topics, from science and technology to social issues and personal development. The talks are designed to inspire and inform, and to encourage the spread of new ideas and perspectives. TEDx speakers are chosen based on their ability to deliver a powerful and thought-provoking message that can have a positive impact on their audience.
         </motion.p>
       </div>
 

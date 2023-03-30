@@ -68,13 +68,22 @@ const Footer = () => {
             <h3 className="title">Join Our Event</h3>
             <hr className="line" />
             <p className="text white">Would you like to attend TEDx ?</p>
-            <form action="https://formspree.io/f/mnqleayp" method="POST">
+            <form action="https://formspree.io/f/mwkjrlbr" method="POST">
               <div className="flex-container">
                 <input
                   className="input-box"
                   placeholder="Email"
                   name="_replyto"
                 />
+                <input
+                  className="input-box"
+                  placeholder="Name"
+                  name="_name" 
+                  />
+                <input 
+                  className="input-box"
+                  placeholder="Type your message"
+                  name="_message"/>
                 <button className="button" type="submit">
                   Submit
                 </button>
@@ -98,8 +107,8 @@ const Footer = () => {
         <div className="footer-container">
           <h3 className="title">Get updates</h3>
           <hr className="line" />
-          <p className="text white">Find us at tedxiiitv@gmail.com</p>
-          <div className="flex-container">
+          <p className="text white">Find us at tedxiiitv@iiitvadodara.ac.in</p>
+          <div className="flex-container text-white">
             <div>
               <p>Tejas Joshi</p>
               <p>+91 87886 28759</p>

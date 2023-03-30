@@ -2,7 +2,7 @@ import React from 'react';
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Works, StarsCanvas, AboutUs} from "../components";
 // import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
+import YtFrame from './YtFrame';
 
 function Home() {
   return (
@@ -24,7 +24,7 @@ function Home() {
           <Feedbacks />
         </section> */}
         <section className='relative z-0 '>
-        <Feedbacks />
+          <YtFrame />
           <StarsCanvas />
         </section>
         {/* <section className='relative z-0'>
@@ -36,3 +36,4 @@ function Home() {
 }
 
 export default Home;
+

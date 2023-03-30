@@ -65,7 +65,7 @@ const Navbar = () => {
               </a>
             </li>
           ))}
-          <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://forms.gle/HsazrWo4kU9xGqh48" target="_blank" rel="noopener noreferrer">
             <li className="bg-[#FF1D1D] font-poppins rounded text-white px-2 py-1 font-medium cursor-pointer text-[16px]">
               Register
             </li>
@@ -99,7 +99,7 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
-              <a href="http://www.google.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://forms.gle/HsazrWo4kU9xGqh48" target="_blank">
                 <li className="bg-[#FF1D1D] rounded font-poppins text-white px-2 py-1 font-medium cursor-pointer text-[16px]">
                   Register
                 </li>
