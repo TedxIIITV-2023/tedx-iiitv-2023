@@ -24,9 +24,14 @@ html {
 {
   margin: 5%;
   background-color: #0000002d;
-  background-image: url("../../assets/bg2.jpg");
+  /* background-image: url("../../assets/bg2.jpg"); */
     
 }
+.bgonly {
+  background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../../assets/backgroundnew.png");
+
+}
+
 .container {
  
 

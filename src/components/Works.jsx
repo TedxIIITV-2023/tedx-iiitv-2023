@@ -65,14 +65,14 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>TedXIIITV</p>
+        <p className={`${styles.sectionSubText} `}>TEDxIIITV</p>
         <h2 className={`${styles.sectionHeadText}`}>Speakers</h2>
       </motion.div>
 
       <div className='w-full flex'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className='mt-3 text-secondary text-[18px] md:text-[24px] leading-[30px]'
         >
           TEDx speakers are individuals who are invited to speak at a TEDx event, which is a local, independently organized version of the global TED conference. These speakers are often experts in their fields or have unique life experiences that they share in a compelling way. TEDx talks cover a wide range of topics, from science and technology to social issues and personal development. The talks are designed to inspire and inform, and to encourage the spread of new ideas and perspectives. TEDx speakers are chosen based on their ability to deliver a powerful and thought-provoking message that can have a positive impact on their audience.
         </motion.p>

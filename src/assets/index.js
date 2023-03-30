@@ -17,6 +17,7 @@ import DSC05028 from "./DSC05028.jpg";
 import blackbg from "./blackbg.png";
 import mic from "./mic.jpg";
 import tedposter from "./ted_poster.png";
+import wavy from "./wavy.jpg";
 export {
   logo,
   menu,
@@ -31,5 +32,6 @@ export {
   cardbg,
   blackbg,
   mic,
-  tedposter
+  tedposter,
+  wavy
 };

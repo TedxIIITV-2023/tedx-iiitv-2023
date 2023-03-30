@@ -8,9 +8,10 @@ import { SectionWrapper } from "../hoc";
 const AboutUs = () => {
 
   const [currentTab, setCurrentTab] = useState('1');
-  const tabs = [      {          id: 1,          tabTitle: 'TED',   
-         title: '',       
-         content: "TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 30 years ago, TED has\
+  const tabs = [{
+    id: 1, tabTitle: 'TED',
+    title: '',
+    content: "TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 30 years ago, TED has\
          grown to support its mission with multiple initiatives. The two annual\
          TED Conferences invite the world's leading thinkers and doers to speak\
          for 18 minutes or less. Many of these talks are then made available,\
@@ -27,9 +28,10 @@ const AboutUs = () => {
          action; TEDx, which supports individuals or groups in hosting local,\
          self- organized TED-style events around the world, and the TED Fellows\
          program, helping world-changing innovators from around the globe to\
-         amplify the impact of their remarkable projects and activities."  },  
-      {          id: 2,          tabTitle: 'TEDX',          title: '',
-                content:  " In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. TEDx is an independently organized event that follows the structure of the popular TED Talks.\
+         amplify the impact of their remarkable projects and activities."  },
+  {
+    id: 2, tabTitle: 'TEDx', title: '',
+    content: " In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. TEDx is an independently organized event that follows the structure of the popular TED Talks.\
                  TEDx events are organized  by volunteers in local communities around the world, with the aim of spreading ideas and sparking conversations on a range of topics. \
                 At a TEDx event, TED Talks video and live speakers combine\
                 to spark deep discussion and connection. These local, self-organized\
@@ -45,9 +47,10 @@ const AboutUs = () => {
                By bringing together diverse voices and perspectives, TEDx events help to foster a deeper\
                 understanding of the complex issues facing our world today, and inspire individuals to take action \
                 towards positive change"
-            },     
-       {          id: 3,          tabTitle: 'IIITV',          title: '', 
-                content: " Indian Institute of Information Technology (IIIT) Vadodara is a premier institute of higher education located in the city of Vadodara \
+  },
+  {
+    id: 3, tabTitle: 'IIITV', title: '',
+    content: " Indian Institute of Information Technology (IIIT) Vadodara is a premier institute of higher education located in the city of Vadodara \
                 in Gujarat, India. The institute was established in 2013 under the Public-Private Partnership (PPP) model, with the Government\
                  of India, the Government of Gujarat, and industry partners as stakeholders.IIIT Vadodara offers undergraduate and graduate\
                   degree programs in the fields of Computer Science and Information Technology. \
@@ -56,10 +59,10 @@ const AboutUs = () => {
                   dedicated to cutting-edge research in areas such as data science, artificial intelligence, and cybersecurity. The institute has collaborations\
                    with several leading academic and research institutions in India and abroad, and its faculty and students are actively engaged in research projects\
                     of national and international significance. In addition to its academic and research programs, IIIT Vadodara is also known for its vibrant campus life. The institute has a range of clubs and student organizations, including a coding club, a robotics club, and a music club, among others. The campus also has several sports facilities, including a football ground, a basketball court, and a gymnasium.\
-IIIT Vadodara is committed to providing its students with a well-rounded education that prepares them for successful careers in the rapidly evolving field of information technology. With its world-class faculty, cutting-edge research facilities, and vibrant campus life, IIIT Vadodara is a top choice for students seeking a career in IT in India."      }  ];
+IIIT Vadodara is committed to providing its students with a well-rounded education that prepares them for successful careers in the rapidly evolving field of information technology. With its world-class faculty, cutting-edge research facilities, and vibrant campus life, IIIT Vadodara is a top choice for students seeking a career in IT in India."      }];
 
   const handleTabClick = (e) => {
-      setCurrentTab(e.target.id);
+    setCurrentTab(e.target.id);
   }
 
   const projects = [];
@@ -68,7 +71,7 @@ IIIT Vadodara is committed to providing its students with a well-rounded educati
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "TED ", "TEDX ", "IIITV " ];
+  const toRotate = ["TED ", "TEDX ", "IIITV "];
   const period = 1000;
 
   useEffect(() => {
@@ -105,44 +108,45 @@ IIIT Vadodara is committed to providing its students with a well-rounded educati
   }
 
   return (
-   
-    <section className="project" id="project" style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center' ,backgroundRepeat:'no-repeat',backgroundAttachment:'fixed',height:'100vh',width:'auto' }}>
+
+    <section className="project w-full h-full md:py-[7rem] md:px-[12rem]" id="project" style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', height: '100vh'}}>
       <center>
-      <Container>
-        <Row>
-          <Col xs={12}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-        <h2 className='font-["FiverFont"]' style={{ marginBottom: '50px', marginTop: '0px', color: "red" }}>
-  {`About `}
-  <span  className="txt-rotate font-['FiverFont']" style={{ color: "white" }} dataPeriod="1000" data-rotate='[ "Ted ", "TedX ", "IIITV " ]'>
-    <span className="wrap">{text}</span>
-  </span>
-</h2>
+        <Container>
+          <Row>
+            <Col xs={12}>
+              <TrackVisibility>
+                {({ isVisible }) =>
+                  <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                    <h2 className='font-["FiverFont"]' style={{ marginBottom: '50px', marginTop: '0px', color: "red" }}>
+                      {`About `}
+                      <span className="txt-rotate font-['FiverFont']" style={{ color: "white" }} dataPeriod="1000" data-rotate='[ "Ted ", "TedX ", "IIITV " ]'>
+                        <span className="wrap">{text}</span>
+                      </span>
+                    </h2>
 
 
-               <div className='tabs'>
-                {tabs.map((tab, i) =>
-                    <button key={i} id={tab.id} disabled={currentTab === `${tab.id}`} onClick={(handleTabClick)}>{tab.tabTitle}</button>
-                )}
-            </div>
-            <div className='content'>
-                {tabs.map((tab, i) =>
-                    <div key={i}>
-                        {currentTab === `${tab.id}` && <div><p className='title'>{tab.title}</p><p className='cs'>{tab.content}</p></div>}
+                    <div className='tabs'>
+                      {tabs.map((tab, i) =>
+                        <button key={i} id={tab.id} disabled={currentTab === `${tab.id}`} onClick={(handleTabClick)}>{tab.tabTitle}</button>
+                      )}
                     </div>
-                )}
-            </div>
-              </div>}
-            </TrackVisibility>
-          </Col>
-        </Row>
-      </Container>
+                    <div className='content'>
+                      {tabs.map((tab, i) =>
+                        <div key={i}>
+                          {currentTab === `${tab.id}` && <div><p className='title'>{tab.title}</p><p className='cs' style={{fontSize
+                          : "20px"}}>{tab.content}</p></div>}
+                        </div>
+                      )}
+                    </div>
+                  </div>}
+              </TrackVisibility>
+            </Col>
+          </Row>
+        </Container>
       </center>
-       </section>
-     
+    </section>
+
   )
 
 }
-export default SectionWrapper(AboutUs, "aboutUs");
+export default AboutUs;

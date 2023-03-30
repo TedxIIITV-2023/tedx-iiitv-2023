@@ -12,7 +12,7 @@ import Gauri from "../../assets/gauri-bakshi.png";
 
 const Speaker = () => {
     return (
-        <section className={`w-full h-full mx-auto`}>
+        <section className={`w-full h-full mx-auto bg-[url('../../assets/wavy.jpg')]`}>
             <div
                 className={`inset-1 py-[18%] md:py-[6%]  max-w-7xl mx-auto ${styles.colour} flex flex-row items-start justify-center align-center`}
             >
@@ -24,16 +24,16 @@ const Speaker = () => {
                 </div>
 
             </div>
-            <div className="flex flex-col gap-[5em]">
+            <div className="flex flex-col gap-[5em] ">
                 <div className="w-[80%] gap-[5%] bg-black text-white m-auto Anuj p-12 flex flex-row justify-between align-center md:flex-col lg:flex-row ">
-                    <div className="md:m-auto flex flex-col gap-[1rem]">
+                    <div className="m-auto flex flex-col gap-[1rem] justify-center align-center">
                         <img src={Anuj} alt="Anuj" />
-                        <div className="text-[1.2rem] text-center">
-                            Anuj Kumar
+                        <div className="text-[1.8rem] text-center">
+                            Anuj Kumar Sharma
                         </div>
                     </div>
-                    <div className="w-[70%] text-[1.1em] text-bold hidden md:block md:m-auto md:w-[80%] md:p-[12px] md:align-center md:justify-center">
-                    <span className="text-red-600">Youtuber | Ex-Amazon, Ex-Urban Company | Educator | Founder Coding Shuttle</span> <br></br>
+                    <div className="w-[70%] text-[1.2em] text-bold hidden md:block md:m-auto md:w-[80%] md:p-[12px] md:align-center md:justify-center">
+                    <span className="text-red-600 text-[1.3em]">Youtuber | Ex-Amazon, Ex-Urban Company | Educator | Founder Coding Shuttle</span> <br></br>
 Anuj Kumar Sharma is a seasoned software engineer with years of expertise working for tech behemoths like Amazon and Urban Company. His true passion, however, is teaching others, especially aspiring engineering students, about his knowledge and experience. Anuj founded Coding Shuttle with the intention of improving the lives of millions of pupils by providing them with useful programming skills. Affectionately referred to as "Bhaiya," has amassed a devoted fan base on his well-liked YouTube channel, "Anuj Bhaiya," which has over 410k followers and features regular video posts about subjects like programming, Android Development, and DSA.
 
                         <div className="py-[20px]">
@@ -77,14 +77,14 @@ Anuj Kumar Sharma is a seasoned software engineer with years of expertise workin
                     
                 </div>
                 <div className="w-[80%] gap-[5%] bg-black text-white m-auto Anuj p-12 flex flex-row-reverse justify-between align-center md:flex-col lg:flex-row-reverse">
-                <div className="md:m-auto flex flex-col gap-[1rem]">
+                <div className="m-auto flex flex-col gap-[1rem] justify-center align-center">
                         <img src={Nandini} alt="Nandini" />
-                        <div className="text-[1.2rem] text-center">
+                        <div className="text-[1.8rem] text-center">
                             Nandini Agrawal
                         </div>
                     </div>
-                    <div className="w-[70%] text-[1.1em] align-center justify-center items-center text-bold hidden md:block md:m-auto md:w-[80%] md:p-[12px] md:align-center md:justify-center">
-                    <span className="text-red-600">BCG | National Record Holder | CA - AIR 1 | AIR 31  | Ex-PwC</span><br /> Nandini Agrawal, a trailblazing young achiever from Morena, Madhya Pradesh. Nandini made history by becoming the youngest person at 19 years of age, to achieve the prestigious Chartered Accountancy (CA) qualification, a remarkable feat that underscores her exceptional talent and hard work. Despite her youth, Nandini has already gained valuable experience in the corporate world, starting her career as an article trainee at PwC and subsequently working with various dynamic teams and work cultures. Currently, Nandini is an Associate Management Consultant at BCG, where she continues to make a significant impact in the business world. Alongside her impressive academic and professional accomplishments, Nandini is also an active participant in extracurricular activities and has a strong understanding of consulting and finance. With her drive and passion, Nandini is poised to achieve even greater success in the future.
+                    <div className="w-[70%] text-[1.2em] align-center justify-center items-center text-bold hidden md:block md:m-auto md:w-[80%] md:p-[12px] md:align-center md:justify-center">
+                    <span className="text-red-600 text-[1.3em]">BCG | India Book of Records | CA - AIR 1 | AIR 31  | Ex-PwC</span><br /> Nandini Agrawal, a trailblazing young achiever from Morena, Madhya Pradesh. Nandini made history by becoming the youngest person at 19 years of age, to achieve the prestigious Chartered Accountancy (CA) qualification, a remarkable feat that underscores her exceptional talent and hard work. Despite her youth, Nandini has already gained valuable experience in the corporate world, starting her career as an article trainee at PwC and subsequently working with various dynamic teams and work cultures. Currently, Nandini is an Associate Management Consultant at BCG, where she continues to make a significant impact in the business world. Alongside her impressive academic and professional accomplishments, Nandini is also an active participant in extracurricular activities and has a strong understanding of consulting and finance. With her drive and passion, Nandini is poised to achieve even greater success in the future.
 
                         <div className="py-[15px]">
                             <div className="social fa fa-lg flex flex-row gap-[5%] md:justify-evenly lg:justify-start">

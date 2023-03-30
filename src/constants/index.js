@@ -33,33 +33,93 @@ export const navLinks = [
 
 const experiences = [
   {
-    title: "Inauguration",
+    title: "Inauguration: Ganesh Vandana",
     company_name: "",
     icon: blackbg,
     iconBg: "#FF0000",
-    date: "8-April 2023",
+    date: "10:00 AM",
     points: [
-     ""
     ],
   },
   {
-    title: "Speaker 1",
+    title: "Inauguration: Musical Performance",
     company_name: "",
     icon: blackbg,
     iconBg: "#FF0000",
-    date: "8-April 2023",
+    date: "10:10 AM",
     points: [
-     "Some random Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     ],
   },
   {
-    title: "Speaker 2",
+    title: "Inauguration: Saraswati pujan",
     company_name: "",
     icon: blackbg,
     iconBg: "#FF0000",
-    date: "8-April 2023",
+    date: "10:20 AM",
     points: [
-     "Some Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. stuffs"
+    ],
+  },
+  {
+    title: "Director's Speech",
+    company_name: "",
+    icon: blackbg,
+    iconBg: "#FF0000",
+    date: "10:30 AM",
+    points: [
+    ],
+  },
+  {
+    title: "TEDx Introduction speech",
+    company_name: "",
+    icon: blackbg,
+    iconBg: "#FF0000",
+    date: "10:40 AM",
+    points: [
+    ],
+  },
+  {
+    title: "First TEDx Talk by Anuj Kumar Sharma",
+    company_name: "",
+    icon: blackbg,
+    iconBg: "#FF0000",
+    date: "11:00 AM",
+    points: [
+    ],
+  },
+  {
+    title: "QnA session with Anuj Bhaiya",
+    company_name: "",
+    icon: blackbg,
+    iconBg: "#FF0000",
+    date: "11:20 AM",
+    points: [
+    ],
+  },
+  {
+    title: "Second TEDx Talk by Nandini Agrawal",
+    company_name: "",
+    icon: blackbg,
+    iconBg: "#FF0000",
+    date: "11:50 AM",
+    points: [
+    ],
+  },
+  {
+    title: "QnA session with Nandini Agrawal",
+    company_name: "",
+    icon: blackbg,
+    iconBg: "#FF0000",
+    date: "12:00 PM",
+    points: [
+    ],
+  },
+  {
+    title: "Open Mic",
+    company_name: "",
+    icon: blackbg,
+    iconBg: "#FF0000",
+    date: "1:30 AM",
+    points: [
     ],
   },
 ];
@@ -97,7 +157,7 @@ const speakers = [
   {
     name: "Nandini Agrawal",
     description:
-      "BCG | National Record Holder | CA - AIR 1 | AIR 31  | Ex-PwC",
+      "BCG | India Book of Records | CA - AIR 1 | AIR 31  | Ex-PwC",
        
     tags: [
       {
