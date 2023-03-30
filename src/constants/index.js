@@ -141,4 +141,4 @@ const speakers = [
   
 ];
 
-export {  experiences, testimonials, speakers };
+export {  experiences, testimonials, speakers, };

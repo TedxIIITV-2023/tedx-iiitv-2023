@@ -36,7 +36,7 @@ const FeedbackCard = ({
 const Feedbacks = () => {
   return (
     <div className="flex flex-row justify-between w-full">
-      <div className={`mt-8 bg-[#0e0e0e] rounded-[20px] w-2/3`}>
+      <div className={`mt-1 bg-[#0e0e0e] rounded-[20px] w-2/3`}>
         <div
           className={`bg-[#0e0e0e] rounded-2xl ${styles.padding} `}
         >
