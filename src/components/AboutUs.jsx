@@ -109,7 +109,7 @@ IIIT Vadodara is committed to providing its students with a well-rounded educati
 
   return (
 
-    <section className="project w-full h-full md:py-[7rem] md:px-[12rem]" id="project" style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', height: '100vh'}}>
+    <section className="project w-full h-full md:py-[7rem] md:px-[12rem]" id="project" style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', height: '100%'}}>
       <center>
         <Container>
           <Row>
@@ -134,7 +134,7 @@ IIIT Vadodara is committed to providing its students with a well-rounded educati
                       {tabs.map((tab, i) =>
                         <div key={i}>
                           {currentTab === `${tab.id}` && <div><p className='title'>{tab.title}</p><p className='cs' style={{fontSize
-                          : "20px"}}>{tab.content}</p></div>}
+                          : "18px"}}>{tab.content}</p></div>}
                         </div>
                       )}
                     </div>

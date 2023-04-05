@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Works, StarsCanvas, AboutUs, Speakers } from "./components";
 import { useRef } from "react";
 // import MeetOurTeam from "./components/MeetOurTeam";
@@ -26,13 +26,12 @@ const App = () => {
       {loading && (
         <div className="loader-container">
           <div className="loader" />
-          
-    </div>
+        </div>
       )}
       {!loading && (
         <div>
-          <Navbar />
           <BrowserRouter>
+            <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/aboutUs" element={<AboutUs />} />
@@ -48,4 +47,3 @@ const App = () => {
 };
 
 export default App;
-

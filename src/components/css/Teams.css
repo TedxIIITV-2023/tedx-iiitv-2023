@@ -150,6 +150,8 @@ p, a, li, button, ul {
   text-justify: inter-word;
   width: 90%;
   padding: 0px;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 .proj-desc
 {
