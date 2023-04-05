@@ -18,16 +18,16 @@ const App = () => {
     setTimeout(() => {
       spinner.style.display = "none";
       setLoading(false);
-    }, 4590);
+    }, 500);
   }
 
   return (
     <>
-      {loading && (
+      {/* {loading && (
         <div className="loader-container">
           <div className="loader" />
         </div>
-      )}
+      )} */}
       {!loading && (
         <div>
           <BrowserRouter>
