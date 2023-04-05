@@ -10,7 +10,7 @@ import Footer from "./components/Footer/Footer";
 import YtFrame from "./components/YtFrame";
 
 const App = () => {
-  console.log("rendering app js");
+  // console.log("rendering app js");
   const spinner = document.getElementsByClassName("loader")[0];
   const [loading, setLoading] = React.useState(true);
 

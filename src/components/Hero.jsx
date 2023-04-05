@@ -11,7 +11,7 @@ const Hero = () => {
         className={`absolute inset-1 top-[120px]  max-w-7xl mx-auto ${styles.paddingX}${styles.colour} flex flex-row items-start gap-5`}
       >
 
-        <div>
+        <div className="pt-[23vh] md:pt-[0vh] max-w-[80vw] mx-auto">
           <h1 className={`${styles.heroHeadText} text-white font-["FiverFont"]`}>
            Unleash Your <span className='text-[#FF0000] font-["FiverFont"]'>Passion</span>
           </h1>
