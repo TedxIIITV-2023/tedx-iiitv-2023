@@ -3,7 +3,6 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { speakers } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -20,46 +19,39 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      {/* <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-[url('./assets/card_bg.png')] bg-contain bg-no-repeat p-8 pt-28 rounded-2xl sm:w-[458px] sm:h-[458px]"
-      > */}
       <div className="bg-[url('./assets/card_bg_3.png')] bg-contain bg-no-repeat p-8 pt-28 sm:w-[458px] sm:h-[450px] rounded-2xl">
         <div className='flex w-full h-[280px] h-fit justify-center align-center'>
           <img
             src={image}
-            
             alt='project_image'
             className='w-[210px] h-[210px] object-cover rounded-2xl'
           />
-
-          {/* <div className='absolute inset-2 flex justify-end m-3 card-img_hover'>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-            >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
-            </div>
-          </div> */}
         </div>
-
+  
         <div className='mt-5 flex flex-col justify-center align-center text-center'>
-          <h3 className='text-[#FC2A05] font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-white text-[14px] '>{description}</p>
+          <h3 className='text-[#FC2A05] font-bold text-[24px] sm:text-[28px]'>{name}</h3>
+          <p className='mt-2 text-white text-[14px] sm:text-[16px]'>{description}</p>
         </div>
-        </div>
-      {/* </Tilt> */}
+      </div>
+      <style jsx>{`
+        .rounded-2xl {
+          border-radius: 24px;
+        }
+        @media (max-width: 639px) {
+          .sm\\:w-[458px] {
+            width: 100%;
+          }
+          .bg {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      `}</style>
     </motion.div>
   );
-};
+      };  
+
 
 const Works = () => {
   return (

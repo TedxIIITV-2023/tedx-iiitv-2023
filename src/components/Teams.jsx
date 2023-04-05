@@ -33,7 +33,6 @@ import { Stars } from "@react-three/drei";
 import { BallCanvas } from "./canvas";
 import TrackVisibility from 'react-on-screen';
 import MeetOurTeam from "./MeetOurTeam";
-const headings = ['Core Team ', 'Core Support', 'Web Team', 'Design Team', 'Management Team', 'Writing Team'];
 export const Teams = () => {
 
   const projects = [
@@ -238,8 +237,11 @@ return (
                   }
                 >
                   {headings.map((heading, headingIndex) => (
-                    <React.Fragment key={headingIndex}>
-                      <h2 className="headingT">{heading}</h2>
+  <React.Fragment key={headingIndex}>
+   <h2 className="headingT">
+      <span className="red-text">{heading.split(' ')[0]}</span>&nbsp;
+      <span className="white-text">{heading.split(' ')[1]}</span>
+    </h2>
                       <Tab.Container
                         id={`${headingIndex}-tabs`}
                       >

@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import 'animate.css';
-import bg from "../assets/herobg.png"
+import bg from "../assets/bg3.png"
 import TrackVisibility from 'react-on-screen';
 import "./css/AboutUs.css"
 import { SectionWrapper } from "../hoc";
@@ -109,20 +109,22 @@ IIIT Vadodara is committed to providing its students with a well-rounded educati
 
   return (
 
-    <section className="project w-full h-full md:py-[7rem] md:px-[12rem]" id="project" style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', height: '100%'}}>
+    <section className="project w-full h-full md:py-[7rem] md:px-[12rem]" id="project" style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundColor:"black", marginTop:'10vh', paddingTop: '10vh', height: '100%'}}>
       <center>
         <Container>
           <Row>
             <Col xs={12}>
               <TrackVisibility>
                 {({ isVisible }) =>
-                  <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                    <h2 className='font-["FiverFont"]' style={{ marginBottom: '50px', marginTop: '0px', color: "red" }}>
-                      {`About `}
-                      <span className="txt-rotate font-['FiverFont']" style={{ color: "white" }} dataPeriod="1000" data-rotate='[ "Ted ", "TedX ", "IIITV " ]'>
-                        <span className="wrap">{text}</span>
-                      </span>
-                    </h2>
+                  <div className={isVisible ? "animate__animated animate__fadeIn" : ""} style={{margin: '0%'}}>
+              <h2 className='font-["FiverFont"]' style={{ marginBottom: '50px', marginTop: '0px', fontWeight: 'bolder', color: "red", fontSize:'70px' }}>
+  {`ABOUT `}
+  <span className="txt-rotate font-['FiverFont']" style={{ color: "white", fontSize: "70px", fontFamily: "'FiverFont', sans-serif !important" }} dataPeriod="1000" data-rotate='[ "Ted ", "TedX ", "IIITV " ]'>
+    <span className="wrap">{text}</span>
+  </span>
+</h2>
+
+
 
 
                     <div className='tabs'>
@@ -134,7 +136,7 @@ IIIT Vadodara is committed to providing its students with a well-rounded educati
                       {tabs.map((tab, i) =>
                         <div key={i}>
                           {currentTab === `${tab.id}` && <div><p className='title'>{tab.title}</p><p className='cs' style={{fontSize
-                          : "18px"}}>{tab.content}</p></div>}
+                          : "20px"}}>{tab.content}</p></div>}
                         </div>
                       )}
                     </div>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -57,12 +58,12 @@ const Navbar = () => {
                 } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
-              <a href={`${nav.id}`} onClick={() => {
+              <Link to={`/${nav.id}`} onClick={() => {
                setToggle(!toggle);
                 setActive(nav.title);
               }}>
                 {nav.title}
-              </a>
+              </Link>
             </li>
           ))}
           <a href="https://forms.gle/HsazrWo4kU9xGqh48" target="_blank" rel="noopener noreferrer">
@@ -93,10 +94,10 @@ const Navbar = () => {
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(nav.title);
-                    window.location.href = `/${nav.id}`; // Redirect to about.jsx page with the specified ID
+                  //  window.location.href = `/${nav.id}`; // Redirect to about.jsx page with the specified ID
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <Link to={`/${nav.id}`}>{nav.title}</Link>
                 </li>
               ))}
               <a href="https://forms.gle/HsazrWo4kU9xGqh48" target="_blank">
