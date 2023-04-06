@@ -239,10 +239,10 @@ return (
                   {headings.map((heading, headingIndex) => (
   <React.Fragment key={headingIndex}>
    <h2 className="headingT">
-      <span className="red-text">{heading.split(' ')[0]}</span>&nbsp;
-      <span className="white-text">{heading.split(' ')[1]}</span>
-    </h2>
-                      <Tab.Container
+  <span className="red-text" style={{ marginRight: "0.2em" }}>{heading.split(' ')[0]}</span>
+  <span className="white-text">{heading.split(' ')[1]}</span>
+</h2>
+           <Tab.Container
                         id={`${headingIndex}-tabs`}
                       >
                         <Nav
@@ -261,28 +261,28 @@ return (
                               : ""
                           }
                         >
-                          <Tab.Pane eventKey="first">
-                            <div className="row project-cards">
-                              {projects
-                                .slice(
-                                  count
-                                    .slice(0, headingIndex)
-                                    .reduce((a, b) => a + b, 0),
-                                  count
-                                    .slice(0, headingIndex + 1)
-                                    .reduce((a, b) => a + b, 0)
-                                )
-                                .map((project, index) => (
-                                  <div
-                                  key={index}
-                                  className="col-6 col-sm-6 col-md-4 col-lg-3 mb-4 project-card-wrapper"
-                                >
-                                  <ProjectCard {...project} className="project-card" />
-                                </div>
-                                
-                                ))}
-                            </div>
-                          </Tab.Pane>
+                         <Tab.Pane eventKey="first">
+  <div className="row project-cards">
+    {projects
+      .slice(
+        count
+          .slice(0, headingIndex)
+          .reduce((a, b) => a + b, 0),
+        count
+          .slice(0, headingIndex + 1)
+          .reduce((a, b) => a + b, 0)
+      )
+      .map((project, index) => (
+        <div
+          key={index}
+          className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 project-card-wrapper"
+        >
+         <ProjectCard {...project} className="project-card my-custom-class" />
+        </div>
+      ))}
+  </div>
+</Tab.Pane>
+
                         </Tab.Content>
                       </Tab.Container>
                     </React.Fragment>

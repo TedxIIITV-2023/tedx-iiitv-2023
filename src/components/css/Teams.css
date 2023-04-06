@@ -128,12 +128,7 @@ p, a, li, button, ul {
   margin-bottom: 5px;
   margin-right: 70px;
 }
-@media (min-width:1700px) {
-	main .container {
-		max-width: 100%;
-		padding: 0 15rem;
-	}
-}
+
 .project {
   padding: 20px;
   margin: 5%;
@@ -213,28 +208,7 @@ a[href*="linkedin.com"] svg {
   width: 80%; /* adjust as needed */
 }
 
-@media (max-width: 767px) {
-  .project-card-wrapper {
-    width: 100%;
-    margin: 25%;
-  }
-  .project h2
-  {
-    margin-top: 5%;
-    margin-bottom: -15%;
-  }
-  .proj-imgbx {
-    margin-bottom: 15px;
-    border: #000000;
-    border-width: 20%;
-  }
-  a[href*="linkedin.com"] svg {
-   
-    top: 40px; /* adjust the top value to move the SVG up or down */
-    right: 30px;
-    
-  }
-}
+
 .project .headingT
 {
   text-decoration: none;
@@ -254,4 +228,84 @@ a[href*="linkedin.com"] svg {
   color: white;
   text-decoration: none;
   border-bottom: none;
+}
+@media (min-width:1700px) {
+	main .container {
+		max-width: 100%;
+		padding: 0 15rem;
+	}
+}
+@media (max-width: 767px) {
+  .project-card-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 10%;
+  }
+  .project h2
+  {
+    font-size: larger;
+    margin-top: 5%;
+    margin-bottom: -15%;
+  }
+  .proj-imgbx {
+    height: 100%;
+    margin-bottom: 15px;
+    border: #000000;
+    border-width: 20%;
+  }
+  a[href*="linkedin.com"] svg {
+    width: 24px;
+    height: 24px; 
+    top: 40px; 
+    color:blue;
+    right: 30px;
+    left: -40px; /* adjust the left value to move the SVG more to the left */
+  }
+  
+}
+@media (max-width: 767px) { 
+  .headingT
+  {
+    margin: 0%;
+  }
+  .headingT span.white-text:before {
+    content: "";
+  }
+  @media (max-width: 767px) {
+    .headingT span {
+      display: block;
+      font-size: 1.2em; /* Adjust font size as needed */
+      line-height: 1em; /* Adjust line height as needed */
+      text-align: center;
+      word-spacing: 0; /* Add this line to remove the space */
+    }
+  }
+  @media (max-width: 767px) {
+  .headingT span {
+    display: block;
+    text-align: center;
+    margin-bottom: 0.5em; /* Add space between the words */
+  }
+  .headingT span.white-text {
+    margin-top: 0.5em; /* Adjust top margin for the second word */
+  }
+  @media (max-width: 767px) {
+    .my-custom-class {
+      font-size: 3rem;
+      padding: 1rem;
+      
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .project-card {
+      width: 100%;
+      height: 100%;
+      /* add other styles as needed */
+    }
+  }
+  
+  
+}
+
+  
 }
