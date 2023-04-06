@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import { Teams } from "./components/Teams";
 import "../styles.css";
 import Footer from "./components/Footer/Footer";
+import MobileFooter from "./components/Footer/MobileFooter/MobileFooter";
 import YtFrame from "./components/YtFrame";
 
 const App = () => {
@@ -40,6 +41,7 @@ const App = () => {
               <Route path="/speakers" element={<Speakers />} />
             </Routes>
             <Footer />
+            <MobileFooter />
           </BrowserRouter>
         </div>
       )}
