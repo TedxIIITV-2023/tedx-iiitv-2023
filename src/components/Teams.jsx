@@ -238,8 +238,8 @@ return (
                 >
                   {headings.map((heading, headingIndex) => (
   <React.Fragment key={headingIndex}>
-   <h2 className="headingT">
-  <span className="red-text" style={{ marginRight: "0.2em" }}>{heading.split(' ')[0]}</span>
+   <h2 className="headingT text-[2.5em] md:text-[60px]">
+  <span className="red-text mx-auto" >{heading.split(' ')[0]}</span>
   <span className="white-text">{heading.split(' ')[1]}</span>
 </h2>
            <Tab.Container
