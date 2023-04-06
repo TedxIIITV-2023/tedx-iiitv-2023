@@ -118,7 +118,7 @@ const experiences = [
     company_name: "",
     icon: blackbg,
     iconBg: "#FF0000",
-    date: "1:30 AM",
+    date: "1:30 PM",
     points: [
     ],
   },
